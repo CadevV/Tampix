@@ -1,0 +1,17 @@
+:root {
+    --amareloPinto: #FFC100;
+    --laranjaSoft: #FF8A08;
+    --vermelhoScarlate: #C40C0C;
+    --brancoPrimario: #f5f5f5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--brancoPrimario);
+    font-family: sans-serif;
+}
