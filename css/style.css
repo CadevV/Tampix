@@ -15,3 +15,52 @@ body{
     background: var(--brancoPrimario);
     font-family: sans-serif;
 }
+
+.overlayBanner{
+    background: rgba(0, 0, 0, 0.5);
+    height: 90vh;
+    width: 100%;
+    z-index: 100;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-image: url('../images/banner.jpeg');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 90vh;
+}
+
+.navMenu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--laranjaSoft);
+}
+
+.linksMenu, .logoMenu, .btnsMenu{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linksMenu{
+    gap: 15px;
+    list-style: none;
+}
+
+.linksMenu a{
+    text-decoration: none;
+}
+
+section{
+    min-height: 50vh;
+}

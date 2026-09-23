@@ -7,24 +7,61 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-    <header class="heroBanner">
-        <nav>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="overlayBanner">
+        <header class="heroBanner">
+            <nav class="navMenu">
+                <figure class="logoMenu">
+                    <img src="#" alt="Logo Tampix">
+                    <figcaption><h2>Tampix</h2></figcaption>
+                </figure>
+                <ul class="linksMenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Tampinhas</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+                <div class="btnsMenu">
+                    <button>Contact Us</button>
+                </div>
+            </nav>
+        </header>
+    </div>
+
 
     <main>
         <section class="secAbout">
-
+            <h2>Quem Somos?</h2>
         </section>
 
         <section class="secFind">
+            <h2>Onde Encontrar?</h2>
+        </section>
 
+        <section class="secQuantity">
+            <div class="tampiQuantity">
+                <label for="dateStart">Insira data inicial</label>
+                <input 
+                type="date" 
+                id="dateStart"
+                value="2026-09-23"
+                min="2026-09-23"  
+                max="2026-11-30" 
+                required>
+
+                <label for="dateEnd">Insira a data Final</label>
+                <input 
+                type="date" 
+                id="dateEnd"
+                name="dateEnd"
+                value="2026-11-30"
+                min="2026-09-23"  
+                max="2026-11-30" 
+                required>
+            </div>
+        </section>
+
+        <section class="secFAQ">
+            <h2>FAQ</h2>
         </section>
     </main>
 
