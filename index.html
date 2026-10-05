@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tampix</title>
+
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-R5S8TqF9B8Q+ZpH6K8Vdsk0vWnpXn8/XW6a6l5M7F0W8XvT+2f0kP0S3VlW2w==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
     <div class="overlayBanner">
@@ -14,23 +20,48 @@
                     <img src="#" alt="Logo Tampix">
                     <figcaption><h2>Tampix</h2></figcaption>
                 </figure>
+
                 <ul class="linksMenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Sobre</a></li>
                     <li><a href="#">Tampinhas</a></li>
                     <li><a href="#">FAQ</a></li>
                 </ul>
+
                 <div class="btnsMenu">
-                    <button>Contact Us</button>
+                    <button id="btnLink">Contact Us</button>
                 </div>
             </nav>
+
+            <div class="textsBanner">
+                <h1 class="tittleBanner">Um titulo ai neh</h1>
+                <p class="textBanner">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, corporis beatae.
+                    Sapiente rem cum fuga quisquam repellat repellendus perferendis modi accusamus numquam
+                    laboriosam magni temporibus.
+                </p>
+                <button class="saibaMais">Saiba mais</button>
+            </div>
         </header>
     </div>
-
 
     <main>
         <section class="secAbout">
             <h2>Quem Somos?</h2>
+
+            <div class="container">
+                <div class="cardsAbout">
+                    <h2>Ajude os animais em situação de rua</h2>
+                </div>
+
+                <div class="cardsAbout">
+                    <h2>Contribua com a preservação ambiental</h2>
+                </div>
+
+                <div class="cardsAbout">
+                    <h2>Outr coisa aí pra completar</h2>
+                </div>
+            </div>
         </section>
 
         <section class="secFind">
@@ -40,23 +71,23 @@
         <section class="secQuantity">
             <div class="tampiQuantity">
                 <label for="dateStart">Insira data inicial</label>
-                <input 
-                type="date" 
-                id="dateStart"
-                value="2026-09-23"
-                min="2026-09-23"  
-                max="2026-11-30" 
-                required>
+                <input
+                    type="date"
+                    id="dateStart"
+                    value="2026-09-23"
+                    min="2026-09-23"
+                    max="2026-11-30"
+                    required>
 
                 <label for="dateEnd">Insira a data Final</label>
-                <input 
-                type="date" 
-                id="dateEnd"
-                name="dateEnd"
-                value="2026-11-30"
-                min="2026-09-23"  
-                max="2026-11-30" 
-                required>
+                <input
+                    type="date"
+                    id="dateEnd"
+                    name="dateEnd"
+                    value="2026-11-30"
+                    min="2026-09-23"
+                    max="2026-11-30"
+                    required>
             </div>
         </section>
 
@@ -66,8 +97,8 @@
     </main>
 
     <footer>
-
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
