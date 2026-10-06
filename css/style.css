@@ -197,7 +197,7 @@ section {
 
 footer{
     background: white;
-    height: 90vh;
+    height: 75vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -237,7 +237,7 @@ footer{
     list-style: none;
     width: 65vw;
     height: 20vh;
-    margin-left: 30px;
+    margin-left: 10px;
 }
   
 .footer-menu {
@@ -341,7 +341,7 @@ footer{
     border-radius: 30px;
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
-    width: 26vw;
+    width: 30vw;
     height: 4vh;
     padding: 2%;
 }
