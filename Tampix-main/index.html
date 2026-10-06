@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tampix</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-R5S8TqF9B8Q+ZpH6K8Vdsk0vWnpXn8/XW6a6l5M7F0W8XvT+2f0kP0S3VlW2w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="overlayBanner">
+        <header class="heroBanner">
+            <nav class="navMenu">
+                <figure class="logoMenu">
+                    <img src="images/logo-removebg-preview.png" alt="Logo Tampix" class="logoTampix">
+                </figure>
+
+                <ul class="linksMenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Tampinhas</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+
+                <div class="btnsMenu">
+                    <button id="btnLink">Contact Us</button>
+                </div>
+            </nav>
+
+            <div class="textsBanner">
+                <h1 class="tittleBanner">Um titulo ai neh</h1>
+                <p class="textBanner">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, corporis beatae.
+                    Sapiente rem cum fuga quisquam repellat repellendus perferendis modi accusamus numquam
+                    laboriosam magni temporibus.
+                </p>
+                <button class="saibaMais">Saiba mais</button>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <section class="secAbout">
+            <h2>Quem Somos?</h2>
+
+            <div class="container">
+                <div class="cardsAbout">
+                    <h2>Ajude os animais em situação de rua</h2>
+                    <p>
+                      Contribuir com o projeto é uma forma de fazer parte de um projeto socioambiental e solidário, que busca promover mudanças positivas na sociedade. Ao se unir a nós, você estará contribuindo para a construção de um mundo mais justo, sustentável e amoroso.
+                    </p>
+                </div>
+
+                <div class="cardsAbout">
+                    <h2>Contribua com a preservação ambiental</h2>
+                    <p>
+                      A coleta de tampinhas plásticas é uma forma de contribuir para a preservação do meio ambiente.
+                      Ao doar suas tampinhas, você estará ajudando a reduzir o impacto ambiental causado pelo descarte inadequado desses materiais e ajudando animais os cuidados necessários.
+                    </p>
+                </div>
+
+                <div class="cardsAbout">
+                    <h2>Ajude no tratamento de animais resgatados</h2>
+
+                    <p>
+                      Ao contribuir com o projeto Tampix, você estará ajudando a arrecadar recursos financeiros para o tratamento e a alimentação de cachorros salvos de situações de maus tratos.
+
+                      Cada tampinha faz a diferença na vida desses animais.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="secFind">
+            <h2>Onde Encontrar?</h2>
+        </section>
+
+        <section class="secQuantity">
+            <div class="tampiQuantity">
+                <label for="dateStart">Insira data inicial</label>
+                <input
+                    type="date"
+                    id="dateStart"
+                    value="2026-09-23"
+                    min="2026-09-23"
+                    max="2026-11-30"
+                    required>
+
+                <label for="dateEnd">Insira a data Final</label>
+                <input
+                    type="date"
+                    id="dateEnd"
+                    name="dateEnd"
+                    value="2026-11-30"
+                    min="2026-09-23"
+                    max="2026-11-30"
+                    required>
+            </div>
+        </section>
+
+        <section class="secFAQ">
+          <h2 class="titulo-faq">FAQ</h2>
+            <div class="item">
+                <div class="pergunta">Como faço para tirar duvidas?</div>
+
+                <div class="resposta">
+                    Basta clicar no botão "Contact us" no topo do site ou no clicar no instagramque está no footer.
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="pergunta">Para onde vão levar as tampinhas?</div>
+
+                <div class="resposta">
+                    Todas as tampinhas serão separadas e levadas para o ecopatas de itaquera.
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="pergunta">  Por quê eu daria uma tampinha?</div>
+
+                <div class="resposta">
+                    Ao escolher doar uma tampinha você ajuda a preservação do meio ambiente e animais resgatados, livre de burocracia.
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="pergunta">  O que é o ecopatas?</div>
+    
+                <div class="resposta">
+                    A Ecopatas é uma organização não governamental (ONG) sem fins lucrativos que recolhe tampas plásticas e lacres de alumínio para financiar a castração de animais abandonados ou em situação de vulnerabilidade
+                </div>
+            </div>
+
+      </section>
+    </main>
+
+    <footer>
+
+        <div class="figure-div">
+            <figure class="figure-img">
+                <img src="images/logo-removebg-preview.png" alt="" class="img-footer">
+            </figure>
+        </div>
+
+        
+      <div class="menu-footer">
+        <ul class="footer-menu">
+          <li class="tp-footer"><a href="#"class="af">Sobre</a></li>
+          <li class="tp-footer"><a href="#" class="af">Cookies</a></li>
+          <li class="tp-footer"><a href="#" class="af">Termos e Condições</a></li>
+          <li class="tp-footer"><a href="#" class="af">Políticas de Privacidade</a></li>
+        </ul>
+      </div> 
+      
+     <div class="footer-duvida"> 
+
+      <h3 class="h3-footer"> Quer nos contatar? </h3>
+      
+      <p class="pfooter">Entre em contato com a gente pelo nosso "Contact us" ou através das nossas redes sociais.</p>
+      
+      </div>
+ 
+      <div class="contato">
+        <div class="btnsMenu2">
+            <button id="btnLink2">Contact Us</button>
+        </div>
+        <h2 class="h2-footer">@jkiutfgsdrescbgcfv</h2>
+        <p class="fp">&copy;Tampix</p>
+      </div>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
