@@ -126,7 +126,7 @@ section {
     background: var(--brancoPrimario);
     border-radius: 30px;
     color: black;
-    width: 24vw;
+    width: 30vw;
     height: 6vh;
     font-size: 1.08rem;
     border: none;
@@ -237,7 +237,6 @@ footer{
     list-style: none;
     width: 65vw;
     height: 20vh;
-    margin-left: 10px;
 }
   
 .footer-menu {
