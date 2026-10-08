@@ -31,6 +31,7 @@ header {
     background-position: center center;
     width: 100%;
     height: 90vh;
+    margin-bottom: 2%;
 }
 
 #menu-toggle{
@@ -213,37 +214,317 @@ section {
     color: var(--brancoPrimario);
 }
 
+
 .saibaMais {
     background: var(--brancoPrimario);
     border-radius: 30px;
     color: black;
-    width: 30vw;
+    width: 24vw;
     height: 6vh;
     font-size: 1.08rem;
     border: none;
 }
 
-.secAbout h2 {
+.divTextAbout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.divTextAbout h2{
     color: var(--laranjaSoft);
     font-family: "Montserrat", sans-serif;
-    font-size: 50px;
+    font-size: 35px;
+    margin-bottom: 0.5%;
+}
+
+.divTextAbout h3{
+    width: 80%;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--laranjaSoft);
+    margin-bottom: 3%;
 }
 
 .container {
     display: flex;
+    justify-content: center;
+    gap: 5%;
 }
 
-.cardsAbout {
-    width: 25%;
-    border: solid 1px;
-    padding: 1%;
-}
+
 
 .cardsAbout h2 {
     color: var(--amareloPinto);
     font-family: "Montserrat", sans-serif;
     font-size: 30px;
     text-align: center;
+}
+
+.secAbout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardsAbout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+    padding: 4%;
+    border-radius: 9px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom: 40px solid #FFC100;
+    transition: all 0.5s;
+    margin-bottom: 7%;
+}
+
+.cardsAbout2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+    padding: 4%;
+    border-radius: 9px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom: 40px solid rgb(0, 97, 29);
+    transition: all 0.5s;
+    margin-bottom: 7%;
+}
+
+.cardsAbout3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+    padding: 4%;
+    border-radius: 9px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom: 40px solid var(--vermelhoScarlate);
+    transition: all 0.5s;
+    margin-bottom: 7%;
+}
+
+.divAbout1{
+    font-size: 30px;
+    color: var(--amareloPinto);
+    margin-bottom: 1%;
+}
+
+.divAbout2{
+    font-size: 30px;
+    color: rgb(0, 97, 29);
+    margin-bottom: 1%;
+}
+
+.divAbout3{
+    font-size: 30px;
+    color: var(--vermelhoScarlate);
+    margin-bottom: 1%;
+}
+
+.cardsAbout h2 {
+    color: var(--amareloPinto);
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 550;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.cardsAbout2 h2 {
+    color: rgb(0, 97, 29);
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 550;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.cardsAbout3 h2 {
+    color: var(--vermelhoScarlate);
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 550;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.cardsAbout p{
+    width: 90%;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17.3px;
+}
+
+.cardsAbout2 p{
+    width: 90%;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17.3px;
+}
+
+.cardsAbout3 p{
+    width: 90%;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17.3px;
+}
+
+.cardsAbout:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 0 15px rgba(255, 193, 0, 0.9);
+}
+
+.cardsAbout2:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 0 15px rgba(0, 97, 29, 0.7);
+}
+
+.cardsAbout3:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 0 15px rgba(196, 12, 12, 0.9);
+}
+
+.secWork{
+    margin-bottom: 5%;
+}
+
+.divTextWork{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+    margin-bottom: 3%;
+}
+
+.divTextWork h1{
+    color: rgb(0, 97, 29);
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.divTextWork h2{
+    width: 100%;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;    
+    font-weight: 500;
+}
+
+.containerWork{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3%;
+}
+
+.divWork{
+    width: 45%;
+    margin-bottom: 5%;
+}
+
+.divWork img{
+    display: block;
+    width: 100%;
+    margin-bottom: 1%;
+    border-radius: 3px;
+    margin-bottom: 3%;
+}
+
+.divWork h3{
+    color: rgb(0, 97, 29);
+    font-family: "Montserrat", sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+
+.divWork p{
+    width: 100%;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+}
+
+.containerPreQuant{  
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10%;
+    gap: 3%;
+    margin: 4%;
+}
+
+.containerPreQuant img{
+    display: block;
+    width: 45%;
+    border-radius: 5px;
+    margin-bottom: 5%;
+}
+
+.divTextPreQuant{
+    width: 100%;
+}
+
+.divTextPreQuant h1{
+    color: var(--vermelhoScarlate);
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+
+.divTextPreQuant h2{
+    color: rgb(43, 43, 43);
+    font-family: "DM Sans", sans-serif;
+    font-size: 33px;
+    font-weight: 550;
+    margin-bottom: 5%;
+}
+
+.divTextPreQuant h4{
+    font-family: "DM Sans", sans-serif;
+    font-size: 19px;
+    font-weight: 450;
+    margin-bottom: 6%;
+}
+
+.divTextPreQuant p{
+    font-family: "DM Sans", sans-serif;
+    font-size: 19px;
+    font-weight: 450;
+    margin-bottom: 4%;
+}
+
+.divTextPreQuant a{
+    width: 40%;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    background-color: var(--vermelhoScarlate);
+    padding: 1%;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.divTextPreQuant a:hover{
+    color: var(--vermelhoScarlate);
+    background-color: rgb(223, 222, 222);
 }
 
 .secFAQ {
@@ -445,3 +726,449 @@ footer{
 .fp{
     color: var(--amareloPinto);
 }
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    
+    :root {
+        --amareloPinto: rgb(255, 193, 0);
+        --laranjaSoft: rgb(255, 138, 8);
+        --vermelhoScarlate: rgb(196, 12, 12);
+        --brancoPrimario: rgb(245, 245, 245);
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        overflow-x: hidden;
+        background: var(--brancoPrimario);
+        font-family: sans-serif;
+    }
+    
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .overlayBanner {
+        background: rgba(0, 0, 0, 0.5);
+        height: 90vh;
+        idth: 100%;
+        z-index: 100;
+        margin-bottom: 6%;
+    }
+    
+    main {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header {
+        background-image:
+            linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+            url('../images/banner.jpeg');
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 90vh;
+    }
+    
+    .navMenu {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        background: var(--laranjaSoft);
+        padding: 1%;
+    }
+    
+    .linksMenu,
+    .logoMenu,
+    .btnsMenu {
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s;
+    }
+    
+    .linksMenu {
+        gap: 15px;
+        list-style: none;
+    }
+    
+    .linksMenu a {
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: all 0.5s;
+    }
+    
+    .linksMenu a:hover {
+        transform: translateY(5px);
+        color: rgb(255, 255, 156);
+    }
+    
+    .btnsMenu button {
+        color: var(--laranjaSoft);
+        border: none;
+        border-radius: 30px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        padding: 2%;
+    }
+    
+    section {
+        min-height: 50vh;
+    }
+    
+    .textsBanner {
+        width: 90%;
+        height: calc(90vh - 60px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        gap: 30px;
+    }
+    
+    .tittleBanner {
+        font-size: 1.5rem;
+        text-align: center;
+        color: var(--amareloPinto);
+    }
+    
+    .textBanner {
+        font-size: 1rem;
+        text-align: center;
+        color: var(--brancoPrimario);
+    }
+    
+    .saibaMais {
+        background: var(--brancoPrimario);
+        border-radius: 30px;
+        color: black;
+        width: 24vw;
+        height: 6vh;
+        font-size: 1.08rem;
+        border: none;
+    }
+    
+    .divTextAbout{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3%;
+    }
+    
+    .divTextAbout h2{
+        color: var(--laranjaSoft);
+        font-family: "Montserrat", sans-serif;
+        font-size: 35px;
+        margin-bottom: 0.5%;
+    }
+    
+    .divTextAbout h3{
+        width: 80%;
+        text-align: center;
+        font-family: "DM Sans", sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--laranjaSoft);
+        margin-bottom: 3%;
+    }
+    
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+    
+    .secAbout{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cardsAbout{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+        padding: 4%;
+        border-radius: 9px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-bottom: 40px solid #FFC100;
+        transition: all 0.5s;
+        margin-bottom: 7%;
+    }
+    
+    .cardsAbout2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+        padding: 4%;
+        border-radius: 9px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-bottom: 40px solid rgb(0, 97, 29);
+        transition: all 0.5s;
+        margin-bottom: 7%;
+    }
+    
+    .cardsAbout3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+        padding: 4%;
+        border-radius: 9px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-bottom: 40px solid var(--vermelhoScarlate);
+        transition: all 0.5s;
+    }
+    
+    .divAbout1{
+        font-size: 30px;
+        color: var(--amareloPinto);
+        margin-bottom: 1%;
+    }
+    
+    .divAbout2{
+        font-size: 30px;
+        color: rgb(0, 97, 29);
+        margin-bottom: 1%;
+    }
+    
+    .divAbout3{
+        font-size: 30px;
+        color: var(--vermelhoScarlate);
+        margin-bottom: 1%;
+    }
+    
+    .cardsAbout h2 {
+        color: var(--amareloPinto);
+        font-family: "Montserrat", sans-serif;
+        font-size: 28px;
+        font-weight: 550;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+    
+    .cardsAbout2 h2 {
+        color: rgb(0, 97, 29);
+        font-family: "Montserrat", sans-serif;
+        font-size: 28px;
+        font-weight: 550;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+    
+    .cardsAbout3 h2 {
+        color: var(--vermelhoScarlate);
+        font-family: "Montserrat", sans-serif;
+        font-size: 28px;
+        font-weight: 550;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+    
+    .cardsAbout p{
+        width: 90%;
+        text-align: center;
+        font-family: "DM Sans", sans-serif;
+        font-size: 17.3px;
+    }
+    
+    .cardsAbout2 p{
+        width: 90%;
+        text-align: center;
+        font-family: "DM Sans", sans-serif;
+        font-size: 17.3px;
+    }
+    
+    .cardsAbout3 p{
+        width: 90%;
+        text-align: center;
+        font-family: "DM Sans", sans-serif;
+        font-size: 17.3px;
+    }
+    
+    .cardsAbout:hover{
+        transform: translateY(-8px);
+        box-shadow: 0 0 15px rgba(255, 193, 0, 0.9);
+    }
+    
+    .cardsAbout2:hover{
+        transform: translateY(-8px);
+        box-shadow: 0 0 15px rgba(0, 97, 29, 0.7);
+    }
+    
+    .cardsAbout3:hover{
+        transform: translateY(-8px);
+        box-shadow: 0 0 15px rgba(196, 12, 12, 0.9);
+    }
+    
+    
+    
+    
+    .secWork{
+        margin-bottom: 5%;
+    }
+    
+    .divTextWork{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 7%;
+    }
+    
+    .divTextWork h1{
+        color: rgb(0, 97, 29);
+        font-family: "Montserrat", sans-serif;
+        font-size: 35px;
+        font-weight: 600;
+    }
+    
+    .divTextWork h2{
+        width: 100%;
+        font-family: "DM Sans", sans-serif;
+        font-size: 18px;    
+        font-weight: 500;
+    }
+    
+    .containerWork{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .divWork{
+        width: 95%;
+        margin-bottom: 5%;
+    }
+    
+    .divWork img{
+        display: block;
+        width: 100%;
+        margin-bottom: 1%;
+        border-radius: 3px;
+        margin-bottom: 3%;
+    }
+    
+    .divWork h3{
+        color: rgb(0, 97, 29);
+        font-family: "Montserrat", sans-serif;
+        font-size: 27px;
+        font-weight: 600;
+        margin-bottom: 2%;
+    }
+    
+    .divWork p{
+        width: 100%;
+        font-family: "DM Sans", sans-serif;
+        font-size: 17px;
+    }
+    
+    
+    
+    
+    .secPreQuantity{
+    
+    }
+    
+    .containerPreQuant{
+        box-sizing: border-box;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10%;
+    }
+    
+    .containerPreQuant img{
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 5%;
+    }
+    
+    .divTextPreQuant{
+        width: 100%;
+    }
+    
+    .divTextPreQuant h1{
+        color: var(--vermelhoScarlate);
+        font-family: "Montserrat", sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 2%;
+    }
+    
+    .divTextPreQuant h2{
+        color: rgb(43, 43, 43);
+        font-family: "DM Sans", sans-serif;
+        font-size: 33px;
+        font-weight: 550;
+        margin-bottom: 5%;
+    }
+    
+    .divTextPreQuant h4{
+        font-family: "DM Sans", sans-serif;
+        font-size: 19px;
+        font-weight: 450;
+        margin-bottom: 6%;
+    }
+    
+    .divTextPreQuant p{
+        font-family: "DM Sans", sans-serif;
+        font-size: 19px;
+        font-weight: 450;
+        margin-bottom: 4%;
+    }
+    
+    .divTextPreQuant a{
+        width: 40%;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-size: 19px;
+        background-color: var(--vermelhoScarlate);
+        padding: 1%;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: all 0.5s;
+    }
+    
+    .divTextPreQuant a:hover{
+        color: var(--vermelhoScarlate);
+        background-color: rgb(223, 222, 222);
+    }
+    
+    
+    
+    }
