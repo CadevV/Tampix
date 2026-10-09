@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 html {
@@ -149,7 +150,7 @@ header {
 }
 
 #menu-toggle:checked + .menuBtn span:nth-child(1) {
-  transform: rotate(45deg) translate(7px, 7px);
+  transform: rotate(45deg) translate(6px, 6px);
   background: var(--vermelhoScarlate);
   border: none;
 }
@@ -174,7 +175,7 @@ header {
 }
 
 .linksMenu a:hover {
-  transform: translateY(5px);
+  transform: translateY(-5px);
   color: rgb(255, 255, 156);
 }
 
@@ -352,11 +353,10 @@ section {
 }
 
 .divTextWork {
+  padding: 0 4% 30px;
   width: 90%;
   display: flex;
   flex-direction: column;
-  margin-left: 4%;
-  margin-bottom: 3%;
 }
 
 .divTextWork h1 {
@@ -461,19 +461,67 @@ section {
 }
 
 .secFind {
-  min-height: auto;
-  padding: 25px 5% 35px;
+  min-height: 10vh;
+  text-align: center;
+  display: flex;
+  padding: 15px 2% 70px;
+}
+
+.container-mapa{
+  flex-direction: column;
+  display: flex;
+  width: 50%;
+}
+
+.container-mapas{
+  flex-direction: column;
+  display: flex;
+  width: 50%;
+}
+
+.containerLetters{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-.secFind h2 {
+
+.containerLetters h2 {
   color: var(--laranjaSoft);
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   margin-bottom: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.secFind p {
+.containerLetters p {
   font-family: "DM Sans", sans-serif;
   font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 85%;
+}
+
+.maps{
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mapa{
+  width: 40vw;
+  height: 60vh;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 25px black;
 }
 
 .secQuantity {
@@ -585,17 +633,16 @@ section {
 
 footer {
   background: white;
-  min-height: 75vh;
+  min-height: 30vh;
   width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
   padding: 15px 0;
 }
 .figure-div .figure-img {
-  width: 45vw;
+  width: 25vw;
   height: 100%;
   display: flex;
   align-items: center;
@@ -612,7 +659,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 65vw;
+  width: 15vw;
   min-height: 20vh;
 }
 .footer-menu {
@@ -621,7 +668,7 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   list-style: none;
-  width: 65vw;
+  width: 15vw;
   min-height: 15vh;
 }
 .af {
@@ -637,7 +684,7 @@ footer {
   white-space: nowrap;
   display: flex;
   justify-content: left;
-  width: 50vw;
+  width: 10vw;
   font-size: 1.3rem;
 }
 .tp-footer .af:hover {
@@ -649,7 +696,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 70vw;
+  width: 40vw;
 }
 .h3-footer {
   font-size: clamp(1.5rem, 2vw, 4rem);
@@ -668,7 +715,7 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 75vw;
+  width: 35vw;
   min-height: 15vh;
   gap: 10px;
 }
@@ -701,10 +748,7 @@ footer {
   body {
     overflow-x: hidden;
   }
-  main {
-    width: 90%;
-    margin: auto;
-  }
+
   .navMenu {
     display: flex;
   }
@@ -727,9 +771,10 @@ footer {
   }
   .divTextAbout h3 {
     width: 95%;
+    padding: 25px 5% 5px;
   }
   .divTextWork {
-    margin-left: 0;
+    text-align: center;
     width: 100%;
   }
   .containerWork {
@@ -749,10 +794,22 @@ footer {
     width: 100%;
   }
   .secQuantity {
-    padding: 25px 0 50px;
+    padding: 25px 5% 50px;
   }
   .painelQuantidade {
     padding: 20px;
+  }
+  .secFind{
+    flex-direction: column;
+  }
+  .container-mapa{
+    width: 100%;
+  }
+  .container-mapas{
+    width: 100%;
+  }
+  .mapa{
+    width: 80vw;
   }
   footer {
     min-height: auto;
@@ -764,11 +821,14 @@ footer {
   .menu-footer {
     width: 80vw;
   }
+  footer{
+    flex-direction: column;
+  }
   .footer-menu {
     width: 80vw;
   }
   .tp-footer .af {
-    width: 65vw;
+    width: 25vw;
   }
   .footer-duvida {
     width: 80vw;
